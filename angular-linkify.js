@@ -38,8 +38,14 @@ angular.module('linkify')
         });
   
         // replace email url
+        // 1=> first part of email address  3=> third part of email after the '@'
+        //  111111111111111111111111111    333333333
         if(/([\w-.!#$%&'*+=/=?^_`{|}~]+)@((?:\w+\.)+)(?:[a-zA-Z]{2,4})/ig.test(_str)) {
-            _text = link_email(_str);
+            _text = _str.replace(/([\w-.!#$%&'*+=/=?^_`{|}~]+)@((?:\w+\.)+)(?:[a-zA-Z]{2,4})/ig,
+                function (email) {
+                    return link_email(email);
+                }
+            );
         }
         
         // bugfix

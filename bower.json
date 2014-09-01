@@ -1,6 +1,6 @@
 {
   "name": "bill-angular-linkify",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "main": "angular-linkify.js",
   "description": "Angular filter to linkify urls, \"@\" usernames, and hashtags.",
   "ignore": [
@@ -10,5 +10,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "homepage": "https://github.com/Astray-git/angular-linkify",
+  "authors": [
+    "Bill Liu"
+  ],
+  "license": "MIT"
 }
